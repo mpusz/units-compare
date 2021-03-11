@@ -1,0 +1,11 @@
+find_package(Boost CONFIG REQUIRED)
+
+add_executable(boost_avg_speed_si_coherent_units avg_speed_si_coherent_units.cpp)
+target_link_libraries(boost_avg_speed_si_coherent_units PRIVATE Boost::Boost)
+
+add_executable(boost_avg_speed_generic avg_speed_generic.cpp)
+target_link_libraries(boost_avg_speed_generic PRIVATE Boost::Boost)
+
+add_executable(boost_avg_speed_concepts avg_speed_concepts.cpp)
+target_compile_features(boost_avg_speed_concepts PRIVATE cxx_std_20)
+target_link_libraries(boost_avg_speed_concepts PRIVATE Boost::Boost)
