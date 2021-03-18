@@ -1,12 +1,12 @@
-#include <units/physical/si/derived/speed.h>
-#include <units/physical/si/international/derived/speed.h>
+#include <units/isq/si/speed.h>
+#include <units/isq/si/international/speed.h>
 #include <units/quantity_io.h>
 #include <cassert>
 #include <iostream>
 
 namespace {
 
-using namespace units::physical;
+using namespace units::isq;
 
 constexpr si::speed<si::metre_per_second> avg_speed(si::length<si::metre> d, si::time<si::second> t)
 {
